@@ -16,8 +16,6 @@ module.exports = {
         'paoloVeroneseGreen': '#09977C22',
         'chineseBlack': '#14101D',
         'whiteWith33': '#FFFFFF33',
-        'whiteWith66': '#FFFFFF66',
-        'whiteWith88': '#FFFFFF88',
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],

@@ -14,7 +14,7 @@
     }
 
     .navbar-active{
-        @apply [&]:fixed [&]:z-40 [&]:animate-slideIn [&]:shadow-2xl [&]:shadow-whiteWith66
+        @apply [&]:fixed [&]:z-40 [&]:animate-slideIn [&]:shadow-xl [&]:shadow-whiteWith33
     }
 
     .left-section{
