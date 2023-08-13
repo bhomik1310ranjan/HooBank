@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .toggle-menu-button{
+        @apply [&>div]:bg-transparent [&>div::before]:w-full [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:w-full [&>div::after]:translate-y-0 [&>div::after]:rotate-135
+    }
+
+    .navbar-menu-opened{
+        @apply [&]:fixed [&]:z-40 
+    }
+
+    .navbar-active{
+        @apply [&]:fixed [&]:z-40 [&]:animate-slideIn [&]:shadow-2xl [&]:shadow-whiteWith66
+    }
+
+    .left-section{
+        @apply [&]:opacity-0 [&]:-translate-x-1/2
+    }
+
+    .right-section{
+        @apply [&]:opacity-0 [&]:translate-x-1/2
+    }
+
+    .right-hero-section{
+        @apply [&]:opacity-0 [&]:-rotate-30
+    }
+
+    .feature-card-1{
+        transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 1000ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .feature-card-2{
+        transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 1000ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+    }
+
+    .feature-card-3{
+        transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 1000ms cubic-bezier(0.4, 0, 0.2, 1) 400ms, opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 400ms;
+    }
+
+    .from-down{
+        @apply [&]:opacity-0 [&]:translate-y-12
+    }
+
+    .testimonial-card-transitions{
+        transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html{
+        scrollbar-color: #5CE1E6 #00040F;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+    }
+
+    html::-webkit-scrollbar{
+        width: 0.2em;
+    }
+
+    html::-webkit-scrollbar-track{
+        background-color: #00040F;
+    }
+
+    html::-webkit-scrollbar-thumb{
+        height: 0.4em;
+        border-radius: 0.2em;
+        background-color: #5CE1E6;
+    }
+}
